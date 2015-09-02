@@ -2,11 +2,62 @@
 
 <html>
 <head>
-	<title>hoppfull</title><meta charset="UTF-8"/>
+	<title>hoppfull - ex01</title><meta charset="UTF-8"/>
+  
+  <script src="./js/code-highlight.js"></script>
+  <script src="./js/jquery-2.1.3-min.js"></script>
+  
+  <link rel="stylesheet" href="css/code-obsidian.css"/>
+  
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="main.js"></script>
 </head>
 <body>
 
-tjosan
+<h1>Variabler</h1>
+<p>En variabel är en behållare för ett föremål, t.ex en siffra eller en
+textsträng.</p>
 
+<h3>ex01:</h3>
+<pre><code class="csharp code"
+>int mynumber = 5;</code></pre>
+
+Här händer ett flertal saker på en gång:
+<ol>
+<li>En plats i minnet reserveras för att förvara heltal</li>
+<li>Minnesplatsen döps till <i>mynumber</i></li>
+<li>Heltalet <i>5</i> lagras i minnesplatsen</li>
+</ol>
+
+<h3>ex02:</h3>
+<pre><code class="csharp code"
+>string mytext = "tjena";</code></pre>
+
+<ol>
+<li>En plats i minnet reserveras för att förvara en textsträng</li>
+<li>Minnesplatsen döps till <i>mytext</i></li>
+<li>Strängen <i>tjena</i> lagras i minnesplatsen</li>
+</ol>
+
+För att åkalla en variabel, använd namnet på den:
+<h3>ex03:</h3>
+<pre><code class="csharp code"
+>Console.WriteLine(mytext);  // printar ut innehållet i minnesplatsen för mytext</code></pre>
+
+<h3>ex04:</h3>
+<pre><code class="csharp code"
+>int x = mynumber;</code></pre>
+<ol>
+<li>En plats i minnet reserveras för att förvara ett heltal</li>
+<li>Minnesplatsen döps till <i>x</i></li>
+<li>Heltalet förvarat i minnesplatsen <i>mynumber</i> hämtas</li>
+<li>Det hämtade värdet tilldelas till x</li>
+</ol>
+
+<script>
+$('pre code').each(function(i, block) {
+  hljs.highlightBlock(block);
+});
+</script>
 </body>
 </html>

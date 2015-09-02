@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>hoppfull - ex02</title><meta charset="UTF-8"/>
+  
+  <script src="./js/code-highlight.js"></script>
+  <script src="./js/jquery-2.1.3-min.js"></script>
+  
+  <link rel="stylesheet" href="css/code-obsidian.css"/>
+  
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="main.js"></script>
+</head>
+<body>
+
+<h1>Arrayer</h1>
+<p>En array är en serie av variabler som kan åkallas med ett och samma
+namn</p>
+
+<h3>ex01:</h3>
+<pre><code class="csharp code"
+>int[] myarray = new array[5];</code></pre>
+
+Här händer ett flertal saker på en gång:
+<ol>
+<li>Fem platser i minnet reserveras för förvaring av fem heltal</li>
+<li>Minnesplatserna döps under ett och samma namn till <i>myarray</i></li>
+<li>Heltalet <i>0</i> lagras automatiskt i minnesplatserna</li>
+</ol>
+
+<h3>ex02:</h3>
+<pre><code class="csharp code"
+>int[] myarray = { 7, 11, 19 };</code></pre>
+
+<ol>
+<li>Tre platser i minnet reserveras för förvaring av tre heltal</li>
+<li>Minnesplatserna döps under ett och samma namn till <i>myarray</i></li>
+<li>Heltalen <i>7, 11</i> och <i>19</i> lagras i minnesplatserna</li>
+</ol>
+
+
+
+
+<script>
+$('pre code').each(function(i, block) {
+  hljs.highlightBlock(block);
+});
+</script>
+</body>
+</html>

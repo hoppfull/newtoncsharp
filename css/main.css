@@ -20,3 +20,20 @@ body {
   font-size:10px;
   color:white;
 }
+
+.mylink {
+  color:#b0b0b0;
+}
+
+.memory {
+  background:#f0f0f0;
+  color:black;
+  
+}
+
+.memloc {
+  background:#c0c0c0;
+  height:20px;width:50px;
+  
+  border:solid 1px black;
+}
