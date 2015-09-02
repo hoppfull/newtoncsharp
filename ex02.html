@@ -18,7 +18,7 @@
 <p>En array är en serie av variabler som kan åkallas med ett och samma
 namn</p>
 
-<h3>ex01:</h3>
+<h3>ex a:</h3>
 <pre><code class="csharp code"
 >int[] myarray = new array[5];</code></pre>
 
@@ -29,7 +29,7 @@ Här händer ett flertal saker på en gång:
 <li>Heltalet <i>0</i> lagras automatiskt i minnesplatserna</li>
 </ol>
 
-<h3>ex02:</h3>
+<h3>ex b:</h3>
 <pre><code class="csharp code"
 >int[] myarray = { 7, 11, 19 };</code></pre>
 
@@ -39,9 +39,23 @@ Här händer ett flertal saker på en gång:
 <li>Heltalen <i>7, 11</i> och <i>19</i> lagras i minnesplatserna</li>
 </ol>
 
+<h3>ex c:</h3>
+För att åkalla en hel array, använd namnet på den:
+<pre><code class="csharp code"
+>int[] anotherarray = myarray;</code></pre>
 
+<h3>ex d:</h3>
+För att åkalla ett enskilt värde i en array, använd denna syntax:
+<pre><code class="csharp code"
+>int x = myarray[0]; // x = 7</code></pre>
+<ol>
+<li>En plats i minnet reserveras för att förvara ett heltal</li>
+<li>Minnesplatsen döps till <i>x</i></li>
+<li>Heltalet förvarat på 0:e minnesplatsen i <i>myarray</i> hämtas</li>
+<li>Det hämtade värdet tilldelas till x</li>
+</ol>
 
-
+<a href="index.html" class="mylink">Hem</a>
 <script>
 $('pre code').each(function(i, block) {
   hljs.highlightBlock(block);

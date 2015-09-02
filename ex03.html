@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>hoppfull - ex03</title><meta charset="UTF-8"/>
+  
+  <script src="./js/code-highlight.js"></script>
+  <script src="./js/jquery-2.1.3-min.js"></script>
+  
+  <link rel="stylesheet" href="css/code-obsidian.css"/>
+  
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="main.js"></script>
+</head>
+<body>
+
+<h1>Implicit typ</h1>
+<p>Ibland pallar vi inte specificiera vad för typ en variabel är. Då
+använder vi nyckelordet <i>var</i>.</p>
+
+<h3>ex a:</h3>
+<pre><code class="csharp code"
+>var mynumber = 5;</code></pre>
+
+Här händer ett flertal saker på en gång:
+<ol>
+<li>.Net listar ut vad för typ av värden som skall förvaras i minnesplatsen</li>
+<li>En plats i minnet reserverades för förvaring av heltal</li>
+<li>Minnesplatsen döps till <i>mynumber</i></li>
+<li>Heltalet <i>5</i> lagras i minnesplatsen</li>
+</ol>
+
+
+<h3>ex b:</h3>
+<pre><code class="csharp code"
+>var mytext = "tjena";</code></pre>
+
+<ol>
+<li>.Net listar ut vad för typ av värden som skall förvaras i minnesplatsen</li>
+<li>En plats i minnet reserverades för förvaring av textsträngar</li>
+<li>Minnesplatsen döps till <i>mytext</i></li>
+<li>Strängen <i>tjena</i> lagras i minnesplatsen</li>
+</ol>
+
+Jämför med <a href="ex01.html" class="mylink">ex01 - Variabler</a></p>
+
+<a href="index.html" class="mylink">Hem</a>
+<script>
+$('pre code').each(function(i, block) {
+  hljs.highlightBlock(block);
+});
+</script>
+</body>
+</html>

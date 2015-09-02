@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>hoppfull - ex04</title><meta charset="UTF-8"/>
+  
+  <script src="./js/code-highlight.js"></script>
+  <script src="./js/jquery-2.1.3-min.js"></script>
+  
+  <link rel="stylesheet" href="css/code-obsidian.css"/>
+  
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="main.js"></script>
+</head>
+<body>
+
+<h1>if-sats</h1>
+<p>Ibland måste program kunna ta beslut utifrån information.</p>
+
+<h3>ex a:</h3>
+<pre><code class="csharp code"
+>// kör följande kodblock om uttrycket i parantes evalueras som sant:
+if (true) {
+  Console.WriteLine("Tjena!");
+}</code></pre>
+
+<pre><code class="csharp code"
+>// ignorera följande kodblock om uttrycket i parantes evalueras som falskt:
+if (false) {
+  Console.WriteLine("Tjena!");
+}</code></pre>
+
+<h3>ex b:</h3>
+If-satsen kan utökas med <i>else if</i>:
+<pre><code class="csharp code"
+>if (false) {  // detta kodblock ignoreras
+  Console.WriteLine("A");
+} else if (true) {  // detta kodblock körs
+  Console.WriteLine("B");
+}</code></pre>
+
+
+<script>
+$('pre code').each(function(i, block) {
+  hljs.highlightBlock(block);
+});
+</script>
+</body>
+</html>
